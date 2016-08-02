@@ -1,0 +1,253 @@
+﻿
+                                                            /*HOME PAGE*/
+/*This is going to be for the slideshow on */
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width:1150px;
+  height:550px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 1150px;
+  width:550px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1150px;
+  height: 550px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 1% 1%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 28px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  background-color:#7f7f7f;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+.slider_wrapper 
+{
+        background: #fafafa;
+        margin: auto;
+        padding: 1px 0px;
+        max-width: 1150px;
+        height:550px;
+}
+
+.icing
+{
+    height:100%;
+    width:100%;
+}
+.foods
+{
+    height:100%;
+    width:100%;
+}
+.initiation
+{
+    height:100%;
+    width:100%;
+}
+
+.volunteer
+{
+    height:100%;
+    width:100%;
+}
+                                                    /*this is for the home table*/
+.home_table
+{
+    table-layout:fixed;
+    width:100%;
+    border-collapse:collapse;
+    border:2px solid #0077c8;
+
+}
+.home_table td{
+    width:33%;
+}
+.first_col
+{
+    background-color: #0077c8;
+    color: white; 
+}
+.second_col
+{
+    background-color: #0077c8;
+    color: white; 
+}
+.home_table .first_col h3
+{
+    color:white; 
+}
+
+.home_table .second_col h3
+{
+    color:white; 
+}
+.hom_table_wrapper{
+        background: #fafafa;
+        background-color:white;
+        margin: auto;
+        padding: 10px 0px;
+        padding-top:1px;
+        max-width: 1150px;
+}
+                                                /*THIS IS FOR THE PHI OF THE WEEK SECTION*/
+.demo-3 {
+    position:relative;
+    width:100%;
+    height:450px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:transparent;
+}
+.demo-3 figure {
+    margin:0;
+    padding:10px;
+    position:relative;
+    cursor:pointer;
+    margin-left:-50px;
+    height:450px;
+    background-color:transparent;
+}
+.demo-3 figure img {
+    display:block;
+    position:relative;
+    z-index:10;
+    margin:-15px 40%
+}
+.demo-3 figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.demo-3 figure h2 
+{
+    font-family: Merriweather; 
+    font-weight: 700; 
+    color: white;
+    font-size:30px;
+    text-align:right;
+}
+.demo-3 figure p {
+    display:block;
+    font-family:'Lato';
+    font-size:18px;
+    line-height:18px;
+    margin:0;
+    color:white;
+    text-align:right;
+}
+.demo-3 figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color:#052f4a;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+.hom_phiofweek_wrapper
+{
+        background: #fafafa;
+        background-color:white;
+        margin: auto;
+        padding: 0px 0px;
+        padding-top:1px;
+        max-width: 1150px;
+        width:100%;
+}
+.phi_of_week_table {
+    table-layout:fixed;
+    width:100%;
+    border-collapse:collapse;
+    border:2px solid white;
+
+}
+.phi_of_week_table td{
+    width:50%;
+     border-collapse:collapse;
+    border:2px solid white;
+}
+.brady 
+{
+    backface-visibility:visible;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}

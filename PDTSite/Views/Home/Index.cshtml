@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section scripts{
+    <script type="text/javascript" src="@Url.Content("/scripts/jquery-1.10.2.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/scripts/jquery-3.1.0.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/Scripts/MainPages.js")"></script>
+}
+
+<link href="~/Content/Layout.css" rel="stylesheet" type="text/css">
+<link href="~/Content/Main.css" rel="stylesheet" type="text/css">
+
+<div class="slider_wrapper">
+    <div id="slider">
+        <a href="#" class="control_next">></a>
+        <a href="#" class="control_prev"><</a>
+        <div class="pictures">
+            <ul>
+                <li><img src="~/Pictures/foods.jpg" class="foods" /></li>
+                <li><img src="~/Pictures/Formal.jpg" /></li>
+                <li> <img src="~/Pictures/menonainitiation.jpg" class="initiation" /> </li>
+                <li><img src="~/Pictures/worstideaever.jpg" class="icing" /></li>
+                <li><img src="~/Pictures/volunteer.jpg" class="volunteer" /></li>
+            </ul>
+        </div>
+    </div>
+    <br />
+</div>
+<div class="hom_table_wrapper">
+    <br />
+    <table class="home_table">
+        <tr>
+            <td align="center" class="first_col">
+                <h3>Fall Rush is Here!</h3>
+                <p12>
+                    <br />
+                    You can find us at tabling infront of
+                    Gordans Dining Hall, Sewell Hall or at the Student Org Fair. Check out
+                    the rush calender or fill out you information at the Join page.
+                </p12>
+                <br />
+                <p><a class="btn btn-default" href="~/Views/Home/JoinUs">Learn more &raquo;</a></p>
+            </td>
+            <td align="center">
+                <br />
+                <h3>Phi of the Week</h3>
+                <br />
+                <p12>Matt Quinn is our Phi of the Week! He was nominated for having the single best fifa record on the campus. Not 
+                only does he pull, but his athletic abilities landed him a spot on kazakhstan's cricket team. </p12>
+                <br />
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            </td>
+            <td align="center" class="second_col">
+                <br />
+                <h3>Donate to ALS</h3>
+                <br />
+                <p12>Lou Gehrig gave his infamous speech before he passed away about living life with ALS. As a phi delt alum, we look to support his cause and further fund the research. Please checkout the ALS site <p12>
+                <p>
+                    <br />
+                    <a class="btn btn-default" href="http://www.alsa.org/about-als/aam-2014/">Learn more &raquo;</a></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="hom_phiofweek_wrapper">
+    <ul class="demo-3">
+        <li>
+            <figure>
+                <img src="~/Pictures/crest.png" alt="" />
+                <figcaption>
+                    <h3>Mayank Katwal </h3>
+                    <img src ="~/Pictures/quinn.jpg" class="brady"> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+</div>

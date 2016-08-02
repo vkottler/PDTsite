@@ -1,0 +1,441 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Merriweather:700,900);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+/*                                1.THIS IS THE DESIGN FOR THE BODY OF THE PAGES                    */
+
+h12 { 
+    font-family: Merriweather; 
+    font-weight: 600; 
+    color:red; 
+    font-size:20px;
+}
+p12   
+{
+     font-size: 0.8rem;
+      line-height: 1.75em; 
+      margin-bottom: 1.25em; 
+      max-width: 700px;
+}
+h3{
+font-family: Merriweather; 
+font-weight: 700; 
+color: #0077c8;
+font-size:30px;
+
+}
+
+h2
+{
+font-family: Merriweather; 
+font-weight: 700; 
+color: #0077c8;
+font-size:38px;
+}
+
+html {
+        background: #000;
+        font-size: 130%;
+        line-height: 1.8em;
+}
+
+body {
+        background-color: #eee;
+        color: #444;
+        font-family: 'Source Sans Pro';
+        font-size: inherit;
+        font-weight: 400;
+        min-height: 1000px;
+        padding: 0px 0px 0;
+        transition: background-color 350ms ease-in-out;
+}
+
+body.sticky 
+{ background-color: #eee; 
+
+}
+/*wrapper for body*/
+
+.wrapper 
+{
+        background: #fafafa;
+        margin: auto;
+        padding: 5px 50px;
+        max-width: 1150px;
+
+}
+
+/*ALL OF THIS IS FOR THE NAVIGATION BARS, SITE-NAV AND SITE-NAV2*/
+.site-nav {
+        background: transparent;
+        box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0),0px 1px 8px 0px rgba(0, 0, 0, 0);
+        max-height: 90px;
+        transition: background-color 220ms ease-in, box-shadow 80ms ease-in;
+
+
+}
+
+.site-topnav {
+        background: transparent;
+        box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0),0px 0px 4px 0px rgba(0, 0, 0, 0);
+        min-height: 50px;
+        transition: background-color 220ms ease-in, box-shadow 80ms ease-in;
+
+}
+
+.site-nav .wrapper 
+{ background: #fafafa; 
+  height: 85px; 
+  width:100%;
+  padding: 0px 0px; 
+  transition: background-color 100ms ease-in-out; 
+
+}
+.top_wrapper {
+    background: #fafafa;
+    height: 50px;
+    background-color: #0077c8;
+    padding: 0px 0px;
+    transition: background-color 100ms ease-in-out;
+
+}
+
+
+nav ul { display: block; float: right; list-style: none; margin: 0; padding: 0; width: 100%; }
+topnav ul { display: block; float: left; list-style: none; margin: 10px; padding: 10px; width: 100%; }
+
+.site-nav li { display: block; float: right; height: 100%; line-height: 100%; margin: 0 20px 10px 0; }
+.site-topnav li { display: block; float: right; height: 100%; line-height: 100%; margin: 0 20px 10px 0; }
+
+.site-nav a 
+{
+        border-bottom: 5px solid transparent;
+        color: #0077c8;
+        display: block;
+        font-family: 'Source Sans Pro';
+        font-weight: 350;
+        font-size: 1.05rem;
+        height: 40px;
+        line-height: 45px;
+        padding: 0 2px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 200ms ease-out;
+        outline-width: 0;
+}
+.site-topnav a 
+{
+        border-bottom: 5px solid transparent;
+        color: white;
+        font-family: 'Source Sans Pro';
+        font-weight: 600;
+        font-size: .85rem;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 1px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 200ms ease-out;
+        outline-width: 0;
+}
+
+
+
+.sticky .site-nav a 
+{
+  color: #888;
+}
+
+.sticky .site-topnav a 
+{
+  color: #888;
+}
+
+
+.site-topnav a:focus,
+.site-topnav a:hover,
+.site-topnav a.active:focus,
+.site-topnav a.active:hover,
+.site-topnav .wrapper:hover a.active:focus,
+.site-nav .wrapper:hover a.active:hover,
+.pages a:focus,
+.pages a:hover,
+.pages a.current:focus,
+.pages a.current:hover 
+{
+        border-color: #CF0404;
+        border-width: 3px;
+        color: transparent;
+        position: relative;
+        top: -1px;
+}
+
+
+.site-nav a:focus,
+.site-nav a:hover,
+.site-nav a.active:focus,
+.site-nav a.active:hover,
+.site-nav .wrapper:hover a.active:focus,
+.site-nav .wrapper:hover a.active:hover,
+.pages a:focus,
+.pages a:hover,
+.pages a.current:focus,
+.pages a.current:hover {
+        border-color: #CF0404;
+        border-width: 2px;
+        color: #444;
+        position: relative;
+        top: -1px;
+}
+
+.site-topnav .top_wrapper:hover a {
+        color: white;
+        text-shadow: 0 0 15px white;
+}
+.site-nav .wrapper:hover a {
+        color: transparent;
+        text-shadow: 0 0 5px #0077c8;
+}
+
+.site-topnav .top_wrapper:hover a:focus,
+.site-topnav .top_wrapper:hover a:hover,
+.site-topnav .top_wrapper:hover a.active,
+.site-topnav .top_wrapper:hover a.active:focus,
+.site-topnav .top_wrapper:hover a.active:hover 
+{
+        /*TEXT HOVER COLOR*/
+        color: #0077c8;
+        text-shadow: none;
+}
+
+.site-nav .wrapper:hover a:focus,
+.site-nav .wrapper:hover a:hover,
+.site-nav .wrapper:hover a.active,
+.site-nav .wrapper:hover a.active:focus,
+.site-nav .wrapper:hover a.active:hover 
+{
+        /*TEXT HOVER COLOR*/
+        color:#0077c8 ;
+        text-shadow: none;
+}
+
+.site-topnav .top_wrapper:hover a.active {
+        color: transparent;
+        text-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+.site-nav .wrapper:hover a.active {
+        color: transparent;
+        text-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+site-topnav a.active,
+.pages a.current {
+        border-color: #333 ;
+        border-width: 2px;
+        color: #0077c8; 
+        font-weight: 400;
+}
+
+.site-nav a.active,
+.pages a.current {
+        border-color: #333 ;
+        border-width: 2px;
+        color: #0077c8; 
+        font-weight: 400;
+}
+
+.site-topnav a:active,
+.site-topnav a.active:active,
+.pages a:active,
+.pages a.current:active {
+        border-color: #CF0404;
+        border-width: 4px;
+        top: 1px;
+}
+
+.site-nav a:active,
+.site-nav a.active:active,
+.pages a:active,
+.pages a.current:active {
+        border-color: #CF0404;
+        border-width: 4px;
+        top: 1px;
+}
+
+.sticky .site-header { margin-bottom: 80px; }
+.sticky .site-topheader { margin-bottom: 80px; }
+
+
+
+.sticky .site-nav {
+	background: rgba(255,255,255,.8);
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.1),0px 1px 8px 0px rgba(0, 0, 0, .6);
+	margin: -180px 0 0;
+	position:fixed;
+	width:100%;
+	z-index: 1000;
+}
+
+.sticky .site-nav .wrapper {
+	background: rgba(250, 250, 250, 0.75);
+}
+
+.site-nav li.search-trigger-container {
+  float: right;
+}
+
+
+.sticky .site-topnav 
+{
+	background: rgba(255,255,255,.8);
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.1),0px 1px 8px 0px rgba(0, 0, 0, .6);
+	margin: -180px 0 0;
+	position:fixed;
+	width:100%;
+	z-index: 1000;
+}
+
+.sticky .site-topnav .top_wrapper {
+	background: rgba(250, 250, 250, 0.75);
+}
+
+.site-topnav li.search-trigger-container {
+  float: right;
+}
+#search-trigger {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  display: block;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-indent: -9999em;
+  top: -2px;
+  transition: background-color 250ms ease-out, box-shadow 200ms ease-out, transform 200ms linear;
+  width: 44px;
+}
+
+#search-trigger:before {
+  background-color: inherit;
+  border: 3px solid #333;
+  border-radius: 50%;
+  content: ' ';
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: border-color 200ms ease-out;
+  width: 16px;
+}
+
+#search-trigger:after {
+  background: #333;
+  border-radius: 2px;
+  bottom: 14px;
+  content: ' ';
+  display: block;
+  height: 3px;
+  left: 8px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: background 200ms ease-out;
+  width: 12px;
+}
+
+#search-trigger:focus,
+#search-trigger:hover {
+  background-color: #404040;
+  transform: scale(1);
+}
+
+#search-trigger:hover:before {
+  border-color: #fff;
+}
+
+#search-trigger:hover:after {
+  background-color: #fff;
+}
+
+#search-trigger:active {
+  box-shadow: 0 0 2px -2px rgba(0,0,0,.3);
+  transform: scale(.9);
+}
+
+
+.content 
+{
+          min-height: 1140px;
+          padding-top: 10px;
+}
+
+.navTable{
+    border-bottom: solid;
+    border-bottom-width:thin;
+    border-bottom-color:#0077c8;
+    width:100%;
+}
+
+/*                                        THIS IS FOR THE FOOTER NOW!                 */
+.footer{
+    color:#0077c8;
+    font-size:20px;
+
+}
+.footer_wrapper 
+{
+        background: #fafafa;
+        margin: auto;
+        padding: 0 0px;
+        max-width: 1150px;
+        height:110%;
+}
+.footer_table{
+width:100%;
+background-color:#0077c8;
+color:white;
+}
+
+.footer_table td{
+text-align:center;
+height:120px;
+
+}
+.footer_table tr{
+height:200px;
+
+}
+.twitter 
+{
+  height: 130px;
+  width:125px;
+}
+.facebook 
+{ 
+  height: 140px;
+  width:130px;
+}
+.instagram 
+{
+  height: 90px;
+  width:90px;
+}
+.linkedin 
+{
+  height: 100px;
+  width:90px;
+}
+p4{
+    font-size:20px;
+    font-weight:400;
+}
+.crest {
+    height:100px;
+    width:90px;
+}

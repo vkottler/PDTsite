@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<link href="~/Content/Layout.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Phi Delta Theta Alpha Chapter UW-Madison</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @* THIS IS THE MAIN LAYOUT PAGE, IT WILL HAVE THE NAVIGATION BARS, THEN THE FOOTER *@
+    @* TOP NAVIGATION BAR *@
+
+    <header class="site-topheader"></header>
+    <nav class="site-topnav">
+        <div class="top_wrapper">
+            <ul>
+                <li>@Html.Partial("_LoginPartial")</li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="site-header"></header>
+    <nav class="site-nav">
+        <div class="wrapper">
+            <table class="navTable">
+                <tr>
+                    <td>
+                        <img src="~/Pictures/pdt.PNG" class="pdtlogo" />
+                    </td>
+                    <td align="right">
+                        <ul>
+                                <li>@Html.ActionLink("Join Us", "JoinUs", "Home")</li>
+                                <li>@Html.ActionLink("Contacts", "Contact", "Home")</li>
+                                <li>@Html.ActionLink("Meet the Brothers", "MeetTheBrothers", "Home")</li>
+                                <li>@Html.ActionLink("About", "About", "Home")</li>
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                            @*<li><a href="#" onclick='window.open("/Views/Home/JoinUs"); return false;'>Join Us</a></li>
+                            <li> <a href="Contact">Contact</a></li>
+                            <li> <a href="/Home/MeetTheBrothers.cshtml">Meet the Brothers</a></li>
+                            <li> <a href="About">About</a></li>
+                            <li> <a href="~/Views/Home/Index.cshtml">Home</a></li>*@
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <header class="footerheader"></header>
+    <nav class="footer">
+        <div class="footer_wrapper">
+            <table class="footer_table">
+                <tr>
+                    <td width="15%" align="center">
+                        <a href="https://twitter.com/phideltuw"><img src="~/Pictures/twitter-bird.png" alt="" class="twitter"></a>
+                    </td>
+                    <td width="15%" align="center">
+                        <a href="https://www.facebook.com/PhiDeltUW/"><img src="~/Pictures/fb-art.png" alt="" class="facebook"></a>
+                    </td>
+                    <td width="40%">
+                        <p4>&copy; @DateTime.Now.Year - Created by Mayank Katwal</p4>
+                        <br />
+                        <p4>All rights reserved to UW-Phi Delta Theta</p4><br />
+                        <img src="~/Pictures/crest.png" class = "crest" alt="Crest">
+                        <br />
+                    </td>
+                    <td width="15%">
+                        <a href="https://www.instagram.com/phideltuw/"><img src="~/Pictures/insta.png" alt="" class="instagram"></a>
+                    </td>
+                    <td width="15%">
+                        <a href="hhttps://www.linkedin.com/company/phi-delta-theta-fraternity"><img src="~/Pictures/linkedin.png" alt="" class="linkedin"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
